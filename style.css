@@ -1,0 +1,102 @@
+/* Basic reset and style */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 20px;
+  background-color: #f9f4ef;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #ffa500;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+
+.menu-section {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+
+.menu-category {
+  margin-bottom: 25px;
+}
+
+.menu-category h3 {
+  border-bottom: 2px solid #ffa500;
+  padding-bottom: 5px;
+  color: #b35400;
+}
+
+.menu-category ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.menu-category ul li {
+  padding: 5px 0;
+  font-weight: 600;
+}
+
+.order-section {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  background: #fff3e0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.order-section h2 {
+  text-align: center;
+  color: #b35400;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+button {
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #cc8400;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #ffa500;
+  color: white;
+  font-weight: bold;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+  }
