@@ -14,98 +14,44 @@
   </header>
 
   <section class="menu-section">
-    <h2>Menu</h2>
+  <h2>Menu</h2>
 
-    <div class="menu-category">
-      <h3>Sandwich</h3>
-      <ul>
-        <li>Cheese Corn Sandwich - ₹59</li>
-        <li>Veg Cheese Sandwich - ₹69</li>
-        <li>Garlic Veg Cheese Corn Sandwich - ₹79</li>
-        <li>Panner Tikka Cheese Sandwich - ₹99</li>
-        <li>Chicken Cheese Sandwich - ₹99</li>
-        <li>Chicken Sandwich - ₹89</li>
-      </ul>
-    </div>
+  <div class="menu-category">
+    <h3>Sandwich</h3>
+    <ul>
+      <li>
+        Cheese Corn Sandwich - ₹59
+        <button class="add-to-cart" data-name="Cheese Corn Sandwich" data-price="59">Add to Cart</button>
+      </li>
+      <li>
+        Veg Cheese Sandwich - ₹69
+        <button class="add-to-cart" data-name="Veg Cheese Sandwich" data-price="69">Add to Cart</button>
+      </li>
+      <li>
+        Garlic Veg Cheese Corn Sandwich - ₹79
+        <button class="add-to-cart" data-name="Garlic Veg Cheese Corn Sandwich" data-price="79">Add to Cart</button>
+      </li>
+      <!-- Add other menu items similarly -->
+    </ul>
+  </div>
 
-    <div class="menu-category">
-      <h3>Mexican Wrap</h3>
-      <ul>
-        <li>Chicken Wrap - ₹79</li>
-        <li>Makhani Chicken Wrap - ₹89</li>
-        <li>Spicy Chicken Wrap - ₹89</li>
-        <li>Jumbo Chicken Cheese Wrap - ₹119</li>
-        <li>Chicken Cheese Wrap - ₹99</li>
-        <li>Makhani Chicken Cheese Wrap - ₹109</li>
-        <li>Spicy Chicken Cheese Wrap - ₹119</li>
-        <li>Veg Wrap - ₹69</li>
-        <li>Veg Cheese Wrap - ₹89</li>
-        <li>Paneer Wrap - ₹79</li>
-        <li>Paneer Cheese Wrap - ₹99</li>
-      </ul>
-    </div>
+  <div class="menu-category">
+    <h3>Drinks</h3>
+    <ul>
+      <li>
+        Virgin Mojito - ₹70
+        <button class="add-to-cart" data-name="Virgin Mojito" data-price="70">Add to Cart</button>
+      </li>
+      <!-- Add other drinks similarly -->
+    </ul>
+  </div>
 
-    <div class="menu-category">
-      <h3>Refreshing Drinks</h3>
-      <ul>
-        <li>Virgin Mojito - ₹70</li>
-        <li>Green Apple Mojito - ₹70</li>
-        <li>Blue Lemon Mojito - ₹70</li>
-        <li>Watermelon Mojito - ₹70</li>
-        <li>Pepsi - ₹39</li>
-        <li>7up - ₹39</li>
-        <li>Cocacola - ₹39</li>
-        <li>Sprite - ₹39</li>
-        <li>Masala Cola - ₹49</li>
-      </ul>
-    </div>
+  <h3>Your Cart:</h3>
+  <ul id="cart-items"></ul>
+  <p>Total: ₹<span id="cart-total">0</span></p>
 
-    <div class="menu-category">
-      <h3>Pizza</h3>
-      <ul>
-        <li>Veg Delight Pizza - ₹129 (Extra Cheese ₹159)</li>
-        <li>Margherita Pizza - ₹129 (Extra Cheese ₹169)</li>
-        <li>Chicken Pizza - ₹149 (Extra Cheese ₹199)</li>
-        <li>Paneer Tikka Pizza - ₹149 (Extra Cheese ₹199)</li>
-        <li>All New Chicken Chizza (No Bun All Chicken Pizza) - ₹199</li>
-      </ul>
-    </div>
-
-    <div class="menu-category">
-      <h3>Maxico Tacos</h3>
-      <ul>
-        <li>Chicken Cheese Tacos 2 pc - ₹159</li>
-        <li>Maxican Chicken Cheese Tacos - ₹99</li>
-        <li>Paneer Cheese Tacos - ₹99</li>
-      </ul>
-    </div>
-
-    <div class="menu-category">
-      <h3>Cutlet</h3>
-      <ul>
-        <li>Crispy Chicken Cutlet 2 pc - ₹80</li>
-        <li>Crispy Chicken Cutlet 3 pc - ₹99</li>
-        <li>Crispy Veg Cutlet 2 pc - ₹60</li>
-        <li>Crispy Veg Cutlet 4 pc - ₹99</li>
-        <li>Jumbo Chicken Cutlet 1 ps - ₹69</li>
-        <li>Crispy Paneer Cutlet 1 ps - ₹60</li>
-      </ul>
-    </div>
-
-    <div class="menu-category">
-      <h3>Mocktails</h3>
-      <ul>
-        <li>Green Apple Lemonade - ₹80</li>
-        <li>Watermelon Lemonade - ₹80</li>
-        <li>Blue Cupuco Lemonade - ₹80</li>
-        <li>Strawberry Lemonade - ₹80</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="order-section">
-    <h2>Place Your Order</h2>
-    <form id="orderForm">
+  <button id="checkout">Order via WhatsApp</button>
+    </section>
       <label for="name">Name:</label><br/>
       <input type="text" id="name" name="name" required /><br/>
 
@@ -119,10 +65,7 @@
     </form>
   </section>
 
-  <footer>
-    <p>Contact us on WhatsApp: <a href="https://wa.me/917063385345" target="_blank">+91 70633 85345</a></p>
-  </footer>
-
+  
   <script>
     document.getElementById('orderForm').addEventListener('submit', function(e){
       e.preventDefault();
